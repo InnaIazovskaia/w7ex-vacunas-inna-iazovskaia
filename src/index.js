@@ -1,15 +1,13 @@
 require("dotenv").config();
 const debug = require("debug")("vacunas");
 const chalk = require("chalk");
-const express = require("express");
-const initializeServer = require("./server/initializeServer");
+const connectDataBase = require("./database");
 
-const app = express();
-const port = process.env.PORT || 4000;
+const connectionString = process.env.MONGO_STRING;
 
 (async () => {
   try {
-    await initializeServer(port, app);
+    await connectDataBase(connectionString);
   } catch (error) {
     debug(chalk.red(`Error: ${error.message}`));
   }
