@@ -4,9 +4,7 @@ const chalk = require("chalk");
 const initializeServer = (port, app) =>
   new Promise((resolve, reject) => {
     const server = app.listen(port, () => {
-      debug(
-        chalk.bgGreenBright(`Server listening on http://localhost:${port}`)
-      );
+      debug(chalk.green(`Server listening on http://localhost:${port}`));
       resolve();
     });
 
