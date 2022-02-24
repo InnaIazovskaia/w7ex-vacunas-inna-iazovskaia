@@ -1,0 +1,36 @@
+{
+  "name": "w7-vacunas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src",
+    "start-dev": "nodemon src -q"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InnaIazovskaia/w7ex-vacunas-inna-iazovskaia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InnaIazovskaia/w7ex-vacunas-inna-iazovskaia/issues"
+  },
+  "homepage": "https://github.com/InnaIazovskaia/w7ex-vacunas-inna-iazovskaia#readme",
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "debug": "^4.3.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.3",
+    "nodemon": "^2.0.15"
+  }
+}
